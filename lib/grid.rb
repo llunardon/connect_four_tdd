@@ -87,4 +87,8 @@ class Grid
 
     return false
   end
+
+  def check_if_full?
+    !@columns.flatten.any?('_')
+  end
 end

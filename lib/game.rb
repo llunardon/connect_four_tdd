@@ -22,6 +22,7 @@ def play_round(player, grid)
     puts "#{player.name} won!"
     return true
   end
+  return true if grid.check_if_full?
 end
 
 play_game
